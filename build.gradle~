@@ -1,4 +1,4 @@
-
+task Hello {
 task hello(description: "Affiche Hello") {
      doLast {
         println "Hello !"
