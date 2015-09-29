@@ -1,12 +1,12 @@
 task hello(description: "Affiche Hello") {
      doLast {
--        println "Hello !"
-+        print "Hello, "
+        println "Hello !"
+        print "Hello, "
      }
-+}
-+
-+task world(description: "Affiche world", dependsOn: hello) << {
-+    println "world !"
+}
+
+task world(description: "Affiche world", dependsOn: hello) << {
+   println "world !"
  }
 
 
